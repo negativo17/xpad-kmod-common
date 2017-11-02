@@ -2,7 +2,7 @@
 
 Name:           xpad-kmod-common
 Version:        4.11
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Common files for the X-Box gamepad driver (SteamOS variant)
 License:        GPLv2+
 URL:            http://www.kernel.org/
@@ -27,6 +27,9 @@ echo "override xpad * extra/xpad" > %{buildroot}%{_sysconfdir}/depmod.d/xpad.con
 %{_sysconfdir}/depmod.d/xpad.conf
 
 %changelog
+* Thu Nov 02 2017 Simone Caronni <negativo17@gmail.com> - 4.11-2
+- Update to 4.14 to match latest module snapshot.
+
 * Sat Apr 15 2017 Simone Caronni <negativo17@gmail.com> - 4.11-1
 - Update to latest snapshot from the official kernel repository.
 
